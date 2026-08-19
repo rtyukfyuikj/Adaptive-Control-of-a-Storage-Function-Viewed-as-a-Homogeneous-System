@@ -42,8 +42,17 @@ f(\Lambda_r(\lambda)x) = \lambda^\nu\,\Lambda_r(\lambda)\,f(x)
 $$
 
 <div align="right">式 (1)</div>
+が成り立つことをいう。
 
-が成り立つことをいう。$r=(r_1,\dots,r_n)$($r_i>0$)は重みベクトル, $\Lambda_r(\lambda):=\mathrm{diag}\{\lambda^{r_i}\}_{i=1}^n$, $r_{\min}:=\min_i r_i$, $\nu\ge -r_{\min}$。
+$r=(r_1,\dots,r_n)$（$r_i>0$）は重みベクトル,
+
+$$
+\Lambda_r(\lambda):=\mathrm{diag}\{\lambda^{r_i}\}_{i=1}^n
+$$
+
+$$
+r_{\min}:=\min_i r_i,\qquad \nu\ge -r_{\min}.
+$$
 
 #### 対象システムと仮定
 
@@ -344,7 +353,7 @@ $$
 候補遅延 $M$ 個($\Delta\tau$刻み, $k=0,\dots,M-1$)による降雨側の遅延埋め込みを
 
 $$
-\bm x(t)[k] := I_{\mathrm{norm}}(t-k\Delta\tau)
+ x(t)[k] := I_{\mathrm{norm}}(t-k\Delta\tau)
 $$
 
 <div align="right">式 (43)</div>
@@ -352,7 +361,7 @@ $$
 とし, タップ $k$ の適応度を, sinc カーネルを用いた 
 
 $$
-f_k(t) := \mathrm{sinc}\bigl(\bm x(t)[k] - Q_{\mathrm{norm}}(t)\bigr)
+f_k(t) := \mathrm{sinc}\bigl(x(t)[k] - Q_{\mathrm{norm}}(t)\bigr)
 $$
 
 <div align="right">式 (44)</div>
